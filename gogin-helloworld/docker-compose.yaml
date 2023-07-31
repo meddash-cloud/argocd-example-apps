@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  gogin-helloworld:
+    image: meddash-gogin-helloworld:0.0.1
+    ports:
+      - 3001:3001
