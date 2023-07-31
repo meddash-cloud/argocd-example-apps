@@ -1,7 +1,16 @@
-version: '3.4'
-
+version: '3.9'
 services:
-  gogin-helloworld:
+  goginhelloworld:
+    profiles: 
+      - gogin
+    networks:
+      - dev
+    container_name: gogin-helloworld
+    hostname: gogin-helloworld
     image: meddash-gogin-helloworld:0.0.1
+      #working_dir: /app
+      #command: "/app/main -serve http"
     ports:
-      - 3001:3001
+     - 8001:8001
+networks:
+  dev:

@@ -1,1 +1,1 @@
-docker-compose run gogin-helloworld -d
+docker-compose up goginhelloworld -d

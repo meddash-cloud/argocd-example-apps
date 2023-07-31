@@ -12,4 +12,4 @@ RUN apk --no-cache add ca-certificates
 COPY --from=builder /go/bin/app /app
 ENTRYPOINT /app
 LABEL Name=gogin-helloworld Version=0.0.1
-EXPOSE 3001
+EXPOSE 8001
